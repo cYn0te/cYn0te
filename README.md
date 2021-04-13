@@ -13,6 +13,7 @@ SHELL=/bin/bash script -q /dev/null
 - How to update metasploit-framework
 
 sudo apt update
+
 sudo apt install metasploit-framework 
 sudo apt install gem
 sudo gem install bundler
