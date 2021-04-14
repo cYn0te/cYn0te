@@ -16,3 +16,6 @@ sudo apt install gem
 sudo gem install bundler
 sudo msfdb reinit
 sudo msfconsole
+
+- Change hosts
+gedit /etc/hosts 
