@@ -19,3 +19,6 @@ sudo msfconsole
 
 - Change hosts
 gedit /etc/hosts 
+
+- Reverse Shell Cheat Sheet
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
