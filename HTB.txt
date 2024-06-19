@@ -45,3 +45,6 @@ jar -cvf yaml-payload.jar -C src/ .
 
 Find:
 -name *.conf -size +20k -size -28k -newermt 2020-03-03 -type f -exec ls -al {} \; 2>/dev/null
+
+Output:
+cat /etc/passwd | grep -v "false\|nologin" | tr ":" " " | column -t
